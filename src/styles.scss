@@ -1,11 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./stlyle.global.config/style-global-colors.scss";
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-html,
 body {
-  
+  font-family: "Fira Sans", Arial, sans-serif;
+  background: var(--g1);
+  color: var(--g13);
+
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
