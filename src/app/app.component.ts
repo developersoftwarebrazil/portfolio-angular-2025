@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { IntroComponent } from './components/intro/intro.component';
+import { IntroComponent } from './sections/intro/intro.component';
+import { ExperienceComponent } from './sections/experience/experience.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { IntroComponent } from './components/intro/intro.component';
     RouterOutlet,
     NavbarComponent,
     IntroComponent,
+    ExperienceComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
