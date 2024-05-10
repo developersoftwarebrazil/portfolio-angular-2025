@@ -16,20 +16,19 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1.25rem;
-    gap: .6rem .9rem;
+    gap: 0.6rem 0.9rem;
     margin-bottom: 1.25rem;
     background: var(--g1);
     border-radius: 0.3rem;
     position: relative;
 
-
     .experience-project-year {
-      font-size: .875rem;
+      font-size: 0.875rem;
       top: 1.375rem;
       left: -5rem;
       position: absolute;
       color: var(--g10);
-      width: .5rem;
+      width: 0.5rem;
       text-align: right;
     }
     .experience-project-title {
@@ -41,7 +40,6 @@
       font-size: 0.875rem;
       line-height: 1.4;
       color: var(--gl0);
-
     }
     .academy-skills {
       display: flex;
@@ -51,9 +49,9 @@
       li {
         font-size: 0.875rem;
         line-height: 1.4;
-        border-radius: .3rem;
+        border-radius: 0.3rem;
         background: var(--w);
-        padding:.3rem .6rem;
+        padding: 0.3rem 0.6rem;
       }
     }
   }
@@ -66,5 +64,38 @@
     top: 1.25rem;
     left: -0.6rem;
     position: absolute;
+  }
+}
+
+@media (max-width: 50rem) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  #experience {
+    .subtitle {
+      color: var(--g13);
+    }
+    .experience-text {
+      font-size: 1.25rem;
+    }
+    .experience-project-content {
+      .experience-project-year {
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+      }
+      .experience-project-year::before{
+        content: "Ano: ";
+      }
+    }
+  }
+}
+@media (max-width: 25rem) {
+  #experience{
+    .experience-project-content{
+      grid-template-columns: 1fr;
+    }
   }
 }

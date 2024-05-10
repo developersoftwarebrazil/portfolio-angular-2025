@@ -34,13 +34,18 @@ img {
   padding: 1rem 2.8rem;
   align-items: center;
   gap: 10rem;
-  .subtitle{
+  .subtitle {
     font-size: 8rem;
     line-height: 1;
     text-transform: uppercase;
     word-break: break-all;
     max-width: 4ch;
-
+  }
+  @media (max-width: 50rem) {
+    .subtitle{
+      font-size: 3rem;
+      text-transform: capitalize;
+      max-width: initial;
+    }
   }
 }
-
