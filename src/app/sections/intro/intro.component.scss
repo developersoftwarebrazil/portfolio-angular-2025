@@ -1,11 +1,4 @@
 #introduction {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 1rem 2.8rem;
-  max-width: 75rem;
-  align-items: center;
-  gap: 10rem;
-
   .intro-text h1 {
     font-size: 4.5rem;
     line-height: 1.125;
@@ -48,7 +41,7 @@
     }
     .intro-text h1::before {
       width: 1.5rem;
-      height: .9rem;
+      height: 0.9rem;
       left: 0;
     }
   }
@@ -57,7 +50,7 @@
   #introduction {
     grid-template-columns: 1fr;
 
-    .profile-photo{
+    .profile-photo {
       display: none;
     }
   }

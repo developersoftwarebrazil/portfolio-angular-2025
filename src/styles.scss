@@ -19,12 +19,28 @@ ul {
 
 body {
   font-family: "Fira Sans", Arial, sans-serif;
-  background: var(--g1);
+  background: var(--w);
   color: var(--g13);
-
 }
 
 img {
   display: block;
   max-width: 100%;
 }
+.container {
+  max-width: 75rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem 2.8rem;
+  align-items: center;
+  gap: 10rem;
+  .subtitle{
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    max-width: 4ch;
+
+  }
+}
+

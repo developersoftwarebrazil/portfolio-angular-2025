@@ -1,0 +1,70 @@
+#experience {
+  .subtitle {
+    color: var(--g3);
+  }
+  .experience-text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 50ch;
+    margin-bottom: 3.75rem;
+    color: var(--g10);
+    strong {
+      color: var(--g13);
+    }
+  }
+  .experience-project-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.25rem;
+    gap: .6rem .9rem;
+    margin-bottom: 1.25rem;
+    background: var(--g1);
+    border-radius: 0.3rem;
+    position: relative;
+
+
+    .experience-project-year {
+      font-size: .875rem;
+      top: 1.375rem;
+      left: -5rem;
+      position: absolute;
+      color: var(--g10);
+      width: .5rem;
+      text-align: right;
+    }
+    .experience-project-title {
+      font-size: 1.125rem;
+      line-height: 1.1;
+      font-weight: bold;
+    }
+    .experience-project-text {
+      font-size: 0.875rem;
+      line-height: 1.4;
+      color: var(--gl0);
+
+    }
+    .academy-skills {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: start;
+      gap: 0.6rem;
+      li {
+        font-size: 0.875rem;
+        line-height: 1.4;
+        border-radius: .3rem;
+        background: var(--w);
+        padding:.3rem .6rem;
+      }
+    }
+  }
+  .experience-project-content::before {
+    display: block;
+    content: "";
+    width: 0.3rem;
+    height: 1.3rem;
+    background: linear-gradient(var(--grl1), var(--grl2));
+    top: 1.25rem;
+    left: -0.6rem;
+    position: absolute;
+  }
+}
