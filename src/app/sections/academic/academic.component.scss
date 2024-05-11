@@ -2,8 +2,12 @@
   display: grid;
   background: var(--g12);
   color: var(--w);
+  padding: 7.5rem 1.25rem;
+  position: relative;
+
   .subtitle {
     color: var(--bl);
+    max-width: 5ch;
   }
   .academic-text {
     font-size: 1.5rem;
@@ -71,33 +75,65 @@
       top: -0.25rem;
       left: -2.313rem;
     }
-    li{
+    li {
       font-size: 1.125rem;
       line-height: 1.1;
       margin-bottom: 1.5rem;
     }
-    span{
+    span {
       color: var(--g8);
     }
 
     .courses {
       margin-bottom: 3.75rem;
-      li{
+      li {
         display: flex;
         justify-content: space-between;
       }
     }
     .courses h3::before {
-      background: url("../../../assets/imgs/svgs/icons/courses.svg") no-repeat center;
+      background: url("../../../assets/imgs/svgs/icons/courses.svg") no-repeat
+        center;
     }
     .languages-coursea h3::before {
-      background: url("../../../assets/imgs/svgs/icons/languages.svg") no-repeat center;
+      background: url("../../../assets/imgs/svgs/icons/languages.svg") no-repeat
+        center;
     }
-    .languages-coursea{
-        span{
-          color: var(--gr1);
-        }
+    .languages-coursea {
+      span {
+        color: var(--gr1);
+      }
     }
+  }
+}
+#academic::after {
+  display: block;
+  content: "";
+  width: 8.125rem;
+  height: 6.25rem;
+  background: url("../../../assets/imgs/svgs/icons/details.svg") no-repeat
+    center;
+  position: absolute;
+  bottom: -3.125rem;
+  left: 1.25rem;
+}
+@media (max-width: 50rem) {
+  #academic {
+    padding: 3.75rem 1.25rem;
+    .academic-container {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
 
+      h3::before {
+        position: initial;
+        margin-bottom: 0.625rem;
+      }
+      .subtitle {
+        color: var(--w);
+      }
+      .academic-text {
+        font-size: 1.25rem;
+      }
+    }
   }
 }
