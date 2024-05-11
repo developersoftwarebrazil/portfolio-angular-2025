@@ -16,6 +16,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Fira Sans", Arial, sans-serif;
@@ -42,7 +45,7 @@ img {
     max-width: 4ch;
   }
   @media (max-width: 50rem) {
-    .subtitle{
+    .subtitle {
       font-size: 3rem;
       text-transform: capitalize;
       max-width: initial;

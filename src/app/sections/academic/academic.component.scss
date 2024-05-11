@@ -1,0 +1,103 @@
+#academic {
+  display: grid;
+  background: var(--g12);
+  color: var(--w);
+  .subtitle {
+    color: var(--bl);
+  }
+  .academic-text {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 40ch color var(--g6);
+    margin-bottom: 3.75rem;
+    strong {
+      color: var(--w);
+    }
+  }
+  .academic-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 3.75rem;
+    .academic {
+      flex: 1;
+      flex-direction: column;
+      padding: 1.25rem;
+      background: var(--bl);
+      border-radius: 0.5rem;
+      .academic-type-course {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: var(--g6);
+        margin-bottom: 0.9rem;
+      }
+      .academic-courses {
+        flex: 1;
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 2.5rem;
+        position: relative;
+      }
+      .academic-courses::before {
+        display: block;
+        content: "";
+        width: 0.25rem;
+        height: 1.25rem;
+        background: linear-gradient(var(--grl1), var(--grl2));
+        left: -1.9rem;
+        position: absolute;
+      }
+      .academic-institution {
+        font-size: 1.125rem;
+        color: var(--g6);
+      }
+    }
+  }
+  .academic-extra-courses {
+    h3 {
+      font-size: 0.875rem;
+      line-height: 1.4;
+      color: var(--g2);
+      text-transform: uppercase;
+      margin-bottom: 1.875rem;
+      position: relative;
+    }
+    h3::before {
+      display: block;
+      content: "";
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: -0.25rem;
+      left: -2.313rem;
+    }
+    li{
+      font-size: 1.125rem;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+    span{
+      color: var(--g8);
+    }
+
+    .courses {
+      margin-bottom: 3.75rem;
+      li{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .courses h3::before {
+      background: url("../../../assets/imgs/svgs/icons/courses.svg") no-repeat center;
+    }
+    .languages-coursea h3::before {
+      background: url("../../../assets/imgs/svgs/icons/languages.svg") no-repeat center;
+    }
+    .languages-coursea{
+        span{
+          color: var(--gr1);
+        }
+    }
+
+  }
+}

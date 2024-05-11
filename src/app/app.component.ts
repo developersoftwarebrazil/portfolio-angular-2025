@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { IntroComponent } from './sections/intro/intro.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
+import { AcademicComponent } from './sections/academic/academic.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { ExperienceComponent } from './sections/experience/experience.component'
     RouterOutlet,
     NavbarComponent,
     IntroComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    AcademicComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
