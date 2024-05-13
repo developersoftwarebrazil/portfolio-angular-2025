@@ -1,0 +1,28 @@
+.container{
+  padding: 7.5rem 1.25rem 3.75rem 1.25rem;
+}
+.footer {
+  background: var(--bl);
+  .footer-text{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: var(--g4);
+  }
+  .footer-contact{
+    li{
+      font-size: 2.25rem;
+      line-height: 1.1;
+      margin-bottom: 1.875rem;
+
+    }
+    a{
+      color: var(--w);
+    }
+  }
+  .footer-copy{
+    grid-column: 1 / -1;
+    font-size: 1.125rem;
+    color: var(--g7);
+    margin: 0 auto;
+  }
+}
