@@ -6,18 +6,21 @@ import { IntroComponent } from './sections/intro/intro.component';
 import { ExperienceComponent } from './sections/experience/experience.component';
 import { AcademicComponent } from './sections/academic/academic.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ImageSizeDirective } from './directives/image-size.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     CommonModule,
+    ImageSizeDirective,
     RouterOutlet,
     NavbarComponent,
     IntroComponent,
     ExperienceComponent,
     AcademicComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './intro.component.html',
   styleUrl: './intro.component.scss'
 })
+
 export class IntroComponent {
 
 }
